@@ -1,0 +1,19 @@
+ls - list what is in the current directory.
+
+cd - change directory
+cd .. - move one level up
+
+cp - copy
+#make a copy of seasonal/summer.csv, calling the new file summer.bck and storing it in the backup directory
+cp seasonal/summer.csv backup/summer.bck
+
+mv - move files
+mv - rename files
+
+rm - remove or "Delete" files
+*the removed file is gone for good.  No backups!
+
+rmdir - removes directory (directory must be empty first!)
+mkdir - make directory
+
+cat - view the contents of a file
