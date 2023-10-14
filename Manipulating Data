@@ -1,0 +1,23 @@
+head -n 3 seasonal/winter.csv - diplays first 3 lines of the "winter" file.
+tail -n +7 seasonal/winter.csv - displays everything but the first 6 lines of the winter file.
+
+ls - r = see everything underneath a directory
+ls - F = prints a / after the name of a directory & a * after the name of a runnable program.ls
+
+man: manual
+
+! - history
+!4 - runs 4th command from history
+
+cut - selects columns
+grep - selects lines
+GREP flags:
+
+    -c: print a count of matching lines rather than the lines themselves
+    -h: do not print the names of files when searching multiple files
+    -i: ignore case (e.g., treat "Regression" and "regression" as matches)
+    -l: print the names of files that contain matches, not the matches
+    -n: print line numbers for matching lines
+    -v: invert the match, i.e., only show lines that don't match
+
+tail -n 5 seasonal/winter.csv > last.csv - saves the first 5 lines of seasonal into a new file called "last".grep
