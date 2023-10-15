@@ -1,0 +1,12 @@
+Echo -
+
+Define variable - testing=red.csv
+
+LOOPS: for filetype in gif jpg png; do echo $filetype; done
+  The structure is for …variable… in …list… ; do …body… ; done
+  The list of things the loop is to process (in our case, the words gif, jpg, and png).
+  The variable that keeps track of which thing the loop is currently processing (in our case, filetype).
+  The body of the loop that does the processing (in our case, echo $filetype).
+
+A loop that prints the last entry from July 2017 in every file in seasonal, separately for each file:
+for filetype in gif jpg png; do echo $filetype; done
