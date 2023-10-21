@@ -1,0 +1,49 @@
+Unix has a bewildering variety of text editors. For this course, we will use a simple one called Nano. If you type nano filename, it will open filename for editing (or create it if it doesn't already exist). 
+You can move around with the arrow keys, delete characters using backspace, and do other operations with control-key combinations:
+
+    Ctrl + K: delete a line.
+    Ctrl + U: un-delete a line.
+    Ctrl + O: save the file ('O' stands for 'output'). You will also need to press Enter to confirm the filename!
+    Ctrl + X: exit the editor.
+
+When you are doing a complex analysis, you will often want to keep a record of the commands you used. You can do this with the tools you have already seen:
+
+    Run history.
+    Pipe its output to tail -n 10 (or however many recent steps you want to save).
+    Redirect that to a file called something like figure-5.history.
+
+Pipe history into tail -n 3 and redirect the output to steps.txt to save the last three commands in a file. 
+(You need to save three instead of just two because the history command itself will be in the list.)
+
+Save commands to run later:
+headers.sh
+
+$@: all command line paramaters given to a script
+
+
+*!*!*! Bash = run a script.
+bash count-records.sh seasonal/*.csv > num-records.out
+-- runst the "count-records.sh" script on all files in the "seasonal" directory, and outputs the data into "num-records.out.
+
+!!!!How can I write loops in a shell script?
+
+Shell scripts can also contain loops. You can write them using semi-colons, or split them across lines without semi-colons to make them more readable:
+
+# Print the first and last data records of each file.
+for filename in $@
+do
+    head -n 2 $filename | tail -n 1
+    tail -n 1 $filename
+done
+
+How can I write loops in a shell script?
+
+Shell scripts can also contain loops. You can write them using semi-colons, or split them across lines without semi-colons to make them more readable:
+
+How can I write loops in a shell script?
+
+Shell scripts can also contain loops. You can write them using semi-colons, or split them across lines without semi-colons to make them more readable:
+
+
+
+
