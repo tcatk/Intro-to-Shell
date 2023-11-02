@@ -1,0 +1,3 @@
+USE CURL TO download the data from a website into a file named "dictionary.txt"
+
+curl -L -o dictionary.txt 'https://tinyurl.com/zeyq9vc'
